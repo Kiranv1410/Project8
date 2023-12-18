@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment8</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <h3>Task 8 : Create a HTML document containing a form and color options below the form, whenever the user clicks on a color below the form, the background color of the form should change, like shown in the above images.</h3>
     <br>
-    <form class="Ball" style="border: 1px solid black; width: 25%; height: 300px; padding: 50px; margin-left: 450px; margin-top: 50px;">
+    <form class="Ball" style="border: 1px solid black; width: 25%; height: 230px; padding: 50px; margin-left: 450px; margin-top: 50px; border-radius: 15px;">
         <div id="name">
             Name : <input type="text" name="name" placeholder="Enter Your name*" required>
         </div><br>
@@ -29,7 +30,8 @@
         </div><br>
         <button type="submit">SUBMIT</button>
         <br><br>
-        <strong>Select background colour</strong>
+       
+        <!-- <strong>Select background colour</strong>
         <select onchange="color(this.value)">
             <option>Colours</option>
             <option  value="Red">Red</option>
@@ -37,28 +39,32 @@
             <option value="Yellow">Yellow</option>
             <option value="Orange">Orange</option>
             <option value="Blue">Blue</option>
-        </select>
+        </select> -->
     
     </form>
-    
+    <div class="container" >
+      <span id="c1" class="color clrl1" onclick="color(this)"></span>
+      <span id="c2" class="color clrl2" onclick="color(this)"></span>
+      <span class="color clrl3" onclick="color(this)"></span>
+      <span class="color clrl4" onclick="color(this)"></span>
+      <span class="color clrl5" onclick="color(this)"></span>
+      <span class="color clrl6" onclick="color(this)"></span>
+      <span class="color clrl7" onclick="color(this)"></span>
+    </div>
 
 </body>
 </html>
-<style>
-    body{
-        background: rgb(17, 17, 231);
-    }
-    h3{
-        color: white;
-    }
-</style>
+
 <script>
-       function color(value){
+       function color(z){
         // document.body.style.backgroundColor=value;
    
-    let final = document.querySelector('form')
-    final.style.backgroundColor=value
-       }
+    // let final = document.querySelector('form')
+    // final.style.backgroundColor=value
+    let a = getComputedStyle(z);
+    let b = a.backgroundColor;
+    document.getElementsByTagName('form')[0].style.backgroundColor=b;      
+}
 
     
 </script>

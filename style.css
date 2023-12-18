@@ -1,0 +1,45 @@
+
+body{
+    /* background: rgb(17, 17, 231); */
+}
+h3{
+    color: black;}
+
+.container{
+    /* border: 2px solid #333; */
+    width: 30%;
+    margin-left: 36%;
+    margin-top: 1%;
+}
+.color{
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    margin: 0 1px;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    
+}
+
+.clrl1{
+    background-color: #00c1cc;
+}
+.clrl2{
+   background-color: #f1575c;
+}
+.clrl3{
+    background-color: #272f44;
+}
+.clrl4{
+    background-color: #fdadb6;
+}
+.clrl5{
+    background-color: #f9f063;
+}
+.clrl6{
+    background-color: #c9536f;
+}
+.clrl7{
+    background-color: #985bc4;
+}
